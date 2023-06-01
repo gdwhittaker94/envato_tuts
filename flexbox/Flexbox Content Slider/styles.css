@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.slider {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  display: flex;
+}
+/*? Flexbox here in order to make the three elements line up alongside each other (i.e. arrow, picture, arrow) */
+
+.slider button {
+  background-color: #333;
+  color: #aaa;
+  font-size: 30px;
+  border: none;
+  transition: all 0.5s;
+}
+.slider button:hover {
+  background-color: #777;
+  color: #eee;
+  cursor: pointer;
+}
+
+.slide h2 {
+  margin-bottom: 0;
+}
+.slide h4 {
+  margin-top: 4px;
+}
+
+.slide:nth-child(1) {
+  background: #eee
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-01.jpg")
+    no-repeat top left;
+}
+.slide:nth-child(2) {
+  background: #eee
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-02.jpg")
+    no-repeat top left;
+}
+.slide:nth-child(3) {
+  background: #eee
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-03.jpg")
+    no-repeat top left;
+}
+.slide:nth-child(4) {
+  background: #eee
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-04.jpg")
+    no-repeat top left;
+}
+
+.slides-container {
+  width: 320px;
+  height: 240px;
+  overflow: hidden;
+}
+/*? ^^ Set height on container so buttons with arrow match the height of the images */
+
+/*? Before 'overflow: hidden' our slides with images were overflowing out to the right. Now they're hidden and we just see one image. */
+
+.slides {
+  display: flex;
+  width: 1280px;
+  position: relative;
+}
+/*? Places divs with images side by side. Sets width of 1280px because each image = 320px wide, so is the total necessary width to display each image correctly within this container.  */
+
+
+.slide {
+  width: 320px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*? ^^ Width and height make image fill the container area + Centers text in the 'slide-text' container. */

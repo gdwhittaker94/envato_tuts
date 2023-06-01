@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: #35a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #35e;
+}
+
+.modal-container {
+  position: absolute;
+  background-color: rgba(0,0,0, 0.5);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*? ^^ 'Inset: 0' is the same as left/right/top/bottom: 0 which we want in order so that the cntr and the dark background covers the full page (NOT by applying width + height 100%). */
+
+.modal {
+  width: 400px;
+  height: 200px;
+  background-color: #eee;
+  font-style: 14px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px #555;
+}
+
+.modal h2 {
+  background-color: #40a9ed;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+}
+
+.modal-body {
+  padding: 10px;
+  padding-top: 0;
+}

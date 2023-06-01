@@ -1,0 +1,93 @@
+html, body { padding: 0; margin: 0; }
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-row {
+  display: flex;
+}
+/*? ^^Initially when we apply display: flex our images disappear, why? Because our divs are empty and therefore need a height/width in order to appear on the page. So we give the image-containing divs a height and then to determine their width we use 'flex' and numbered ratios.  */
+
+.image-row div {
+  height: 350px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*? (Below) Use 'flex' and change the number ratios in order to get different image sizes within the grid. */
+
+.image01 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-01.jpg');
+  flex: 1;
+}
+
+.image02 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-02.jpg');
+  flex: 1;
+}
+
+.image03 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-03.jpg');
+  flex: 2;
+}
+
+.image04 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-04.jpg');
+  flex: 2;
+}
+
+.image05 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-05.jpg');
+  flex: 1;
+}
+
+.image06 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-06.jpg');
+  flex: 1;
+}
+
+.image07 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-07.jpg');
+  flex: 3;
+}
+
+.image08 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-08.jpg');
+  flex: 3;
+}
+
+.image09 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-09.jpg');
+  flex: 1;
+}
+
+.image10 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-10.jpg');
+  flex: 1;
+}
+
+.image11 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-11.jpg');
+  flex: 1;
+}
+
+.image12 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-12.jpg');
+  flex: 1;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .image-row {
+    flex-direction: column;
+    height:1000px;
+  }
+  /*? ^^ When making the rows columns you have to apply a height in order for the pictures to show (the div had a height but not the row) */
+
+
+}
